@@ -1,0 +1,18 @@
+pipeline{
+  agnet any
+  stages{
+    stage('build'){
+      steps{
+        sh ' echo "Build stage completed successfully"'
+      }
+    }
+
+    stage('test'){
+      steps{
+          sh ' echo "Test stage completed"'  
+        }
+      
+      }
+    
+  }
+}
